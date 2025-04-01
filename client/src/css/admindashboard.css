@@ -1,0 +1,143 @@
+/* Main Dashboard Layout */
+.admin-dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    font-family: "Roboto", sans-serif;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Job Upload Section */
+.job-upload {
+    flex: 1;
+    background: rgba(80, 80, 80, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    min-width: 300px; /* Ensuring responsiveness */
+}
+
+/* Responsive Form Layout */
+.job-upload form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input and Textarea Styling */
+.job-upload input,
+.job-upload textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+}
+
+/* Textarea Specific Styling */
+.job-upload textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Placeholder Styling */
+.job-upload input::placeholder,
+.job-upload textarea::placeholder {
+    color: #bbb;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e68900;
+}
+
+/* Resume List Section */
+.resume-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background: rgba(50, 50, 50, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 40%;
+}
+
+/* Scrollable Job List */
+.job-list-scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+
+/* Job List Styling */
+.job-list {
+    background-color: #161616;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Job Item Styling */
+.job-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #1d1c1c;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Resume List */
+.resume-list {
+    background-color: #201e1e;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styling for Resumes */
+.resume-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resume-list li {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.resume-list li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .job-upload,
+    .resume-container {
+        flex: 1 1 100%;
+    }
+}

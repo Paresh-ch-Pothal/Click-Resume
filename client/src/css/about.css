@@ -1,0 +1,99 @@
+/* Dark Gradient Theme */
+.about-us {
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+    color: white;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  
+  /* Banner Styling */
+  .banner {
+    background: linear-gradient(to right, #181818, #242424), 
+                url("../assets/banner-bg.jpg") no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(10, 10, 10, 0.7);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    color: #b0b0b0; /* Soft metallic gray */
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+    color: #d0d0d0;
+  }
+  
+  /* About Section */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    color: #cccccc;
+    margin-bottom: 40px;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature-box {
+    background: linear-gradient(to bottom, #222222, #292929);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+    background: linear-gradient(to bottom, #2c2c2c, #343434);
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #b0b0b0; /* Soft metallic gray */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-box {
+      width: 80%;
+    }
+  
+    .banner h1 {
+      font-size: 2rem;
+    }
+  
+    .banner p {
+      font-size: 1rem;
+    }
+  }
+  

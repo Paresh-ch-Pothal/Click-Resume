@@ -1,0 +1,253 @@
+/* Main Page Background */
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+    font-family: "Roboto", sans-serif;
+}
+
+/* Upload Box */
+.upload-box {
+    background: rgba(80, 80, 80, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #ddd;
+}
+
+.file-input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 80%;
+}
+
+.job-role-select {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    width: 80%;
+}
+
+.submit-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e68900;
+}
+
+/* Results Section */
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Left & Right Sections */
+.left-section,
+.right-section {
+    padding: 20px;
+    border-radius: 10px;
+    color: #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.left-section {
+    background: rgba(100, 100, 100, 0.3);
+    width: 30%; /* Set left section width to 30% */
+    height: 200px; /* Set height of the left section */
+    overflow-y: auto; /* Ensure content overflows properly */
+}
+
+.right-section {
+    background: rgba(50, 50, 50, 0.4);
+    width: 70%; /* Set right section width to 70% */
+}
+
+/* Job Suggestions Box */
+.job-suggestions-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.job-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.job-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Strength Slider */
+.strength-slider {
+    width: 100%;
+    margin-top: 10px;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, red, yellow, green);
+}
+
+/* Left Section */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #ddd;
+}
+
+/* Job Item Box */
+.job-item-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-item-box:hover {
+    transform: scale(1.05); /* Job item grows on hover */
+    background: rgba(255, 255, 255, 0.15); /* Slightly darken the background on hover */
+}
+
+/* Job Role Text */
+.job-role {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ATS Score Text */
+.ats-score {
+    font-size: 1rem;
+    color: #ff9800;
+}
+
+/* Job Role Section (Hover effect) */
+.job-item-box:hover .job-role {
+    color: #ff9800; /* Change job role text color on hover */
+}
+
+/* ATS Score Section (Hover effect) */
+.job-item-box:hover .ats-score {
+    color: #4caf50; /* Change score text color on hover */
+}
+
+/* Right Section */
+.right-section {
+    padding: 20px;
+    background: rgba(50, 50, 50, 0.4);
+    border-radius: 10px;
+    color: #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Container */
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Feedback Section */
+.feedback-section {
+    background: rgba(80, 80, 80, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Feedback Section Title */
+.feedback-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Feedback Section List */
+.feedback-section ul {
+    list-style-type: disc; /* Add bullet points for list items */
+    padding-left: 20px; /* Add padding to align list items properly */
+}
+
+.feedback-section li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Overall Assessment */
+.overall-assessment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Assessment Colors */
+.assessment {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.assessment.weak {
+    color: red;
+}
+
+.assessment.medium {
+    color: yellow;
+}
+
+.assessment.strong {
+    color: green;
+}
+
+/* Feedback Slider Container */
+.feedback-slider-container {
+    margin-top: 20px;
+}
+
+/* Strength Slider */
+.strength-slider {
+    width: 100%;
+    height: 8px;
+    appearance: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, red, yellow, green);
+}
+
+.strength-slider:focus {
+    outline: none;
+}

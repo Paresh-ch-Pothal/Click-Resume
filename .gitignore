@@ -1,0 +1,52 @@
+# Node.js (server)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+debug.log
+*.out
+*.pid
+
+# Database
+*.sqlite
+*.sqlite3
+db.json
+dump.rdb
+*.pid
+*.seed
+*.tgz
+
+# Cache and build files
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Operating system files
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+
+# React (client)
+frontend/node_modules/
+frontend/.env
+frontend/.next/
+frontend/build/
+frontend/.cache/
+
+# VSCode settings
+.vscode/

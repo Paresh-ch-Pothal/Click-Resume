@@ -4,7 +4,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import { useNavigate } from "react-router-dom";
 import bg from '../assets/bg.png'
 
-export default function LoginOverlay() {
+export default function Overlay() {
 
     const naivigate = useNavigate()
     const onLogin=()=>{

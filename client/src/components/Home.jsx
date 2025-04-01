@@ -1,7 +1,7 @@
 import React from 'react'
 import AdminDashboard from '../components/AdminDashboard'
 import UserUpload from '../components/UserUpload'
-import LoginOverlay from '../components/loginOverlay'
+import Overlay from './Overlay'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
           <AdminDashboard />
         </div>
       ) : (
-        <div><LoginOverlay/></div>
+        <div><Overlay/></div>
       ) }
     </div>
   )

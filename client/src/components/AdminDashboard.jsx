@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../css/adminDashboard.css";
+import "../css/admindashboard.css";
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import loadingAnimation from "../assets/animation2.json";
 import TouchRipple from "@mui/material/ButtonBase/TouchRipple";

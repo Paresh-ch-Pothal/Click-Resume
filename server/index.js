@@ -11,7 +11,7 @@ const userRoutes = require('./routes/user')
 
 const cors = require('cors')
 app.use(cors({
-    origin: ['https://clickresume.vercel.app/','http://localhost:5173'],
+    origin: '*',
     methods: ["POST", "GET", "OPTIONS"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]

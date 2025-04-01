@@ -11,11 +11,12 @@ const userRoutes = require('./routes/user')
 
 const cors = require('cors')
 app.use(cors({
-    origin: '*',
-    methods: ["POST", "GET", "OPTIONS"],
-    credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"]
+    origin: ['https://clickresume.vercel.app', 'http://localhost:5173'], // Allow these origins to make requests
+    methods: ["POST", "GET", "OPTIONS"], // Allow these HTTP methods
+    credentials: true, // Allow cookies and other credentials to be sent
+    allowedHeaders: ["Content-Type", "Authorization", "token"], // Allow the token header
 }));
+
 
 
 app.use(bodyParser.json())

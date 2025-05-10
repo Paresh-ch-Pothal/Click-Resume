@@ -11,7 +11,7 @@ const userRoutes = require('./routes/user')
 
 const cors = require('cors')
 app.use(cors({
-    origin: ['https://ats-system-flask.onrender.com','https://clickresume.vercel.app', 'http://localhost:5173','http'], // Allow these origins to make requests
+    origin: ['https://ats-system-flask.onrender.com','https://clickresume.vercel.app', 'http://localhost:5173','http://localhost:5174','http'], // Allow these origins to make requests
     methods: ["POST", "GET", "OPTIONS"], // Allow these HTTP methods
     credentials: true, // Allow cookies and other credentials to be sent
     allowedHeaders: ["Content-Type", "Authorization", "token"], // Allow the token header

@@ -23,7 +23,7 @@ const UserUpload = () => {
     const [allJobs, setAllJobs] = useState([])
     const [uniqueJobRole, setUniqueJobRole] = useState([])
     const host = import.meta.env.VITE_API_URL;
-    const hostFlaks = import.meta.env.VITE_API_URL_FLASK;
+    const hostFlask = import.meta.env.VITE_API_URL_FLASK;
 
     const getUniqueJobRole = async (jobs) => {
         if (!jobs || jobs.length === 0) {
@@ -32,7 +32,7 @@ const UserUpload = () => {
         }
 
         try {
-            const response = await fetch(`${hostFlaks}/uniqueJobRoleFromMERN`, {
+            const response = await fetch(`${hostFlask}/uniqueJobRoleFromMERN`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -102,7 +102,7 @@ const UserUpload = () => {
 
             const formData = new FormData();
             formData.append("resume", resume);
-            const response = await fetch(`${hostFlaks}/upload`, {
+            const response = await fetch(`${hostFlask}/upload`, {
                 method: "POST",
                 body: formData
             });
@@ -125,7 +125,7 @@ const UserUpload = () => {
 
     const calculateAtsScore = async (allJobs, structuredData, selectedOption) => {
         try {
-            const response = await fetch(`${hostFlaks}/calculate_ats_scoreMERN`, {
+            const response = await fetch(`${hostFlask}/calculate_ats_scoreMERN`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -153,7 +153,7 @@ const UserUpload = () => {
 
     const GetFeedback = async (structuredData) => {
         try {
-            const response = await fetch(`${hostFlaks}/feedbackMERN`, {
+            const response = await fetch(`${hostFlask}/feedbackMERN`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
